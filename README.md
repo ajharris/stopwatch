@@ -1,12 +1,46 @@
-# React + Vite
+# Stopwatch App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based stopwatch application that tracks time in minutes, seconds, tenths of a second, and frames (at 60 FPS). It also supports multiple lap tracking.
 
-Currently, two official plugins are available:
+## Features
+- Start/Stop functionality
+- Reset timer
+- Lap tracking (stores multiple lap times)
+- Displays time with precision up to frames (assuming 60 FPS)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/stopwatch-app.git
+   cd stopwatch-app
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-## Expanding the ESLint configuration
+## Usage
+- Click **Start** to begin the stopwatch.
+- Click **Stop** to pause the stopwatch.
+- Click **Lap** to record the current time as a lap.
+- Click **Reset** to reset the timer and clear laps.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+```
+stopwatch-app/
+│-- src/
+│   ├── App.js      # Main React component
+│   ├── App.css     # Basic styling
+│   ├── index.js    # React entry point
+│-- public/
+│-- package.json   # Project dependencies
+│-- README.md      # Documentation
+```
+
+## License
+This project is licensed under the MIT License.
+
